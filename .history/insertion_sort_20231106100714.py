@@ -10,12 +10,12 @@ def insertion_sort(arr):
             arr[j-1], arr[j] = arr[j], arr[j-1]
             j -= 1
 
-#this is to generate random numbers
+
 arr = []
 for a in range(1,5000):
     n = random.randint(1,10000)
     arr.append(n)
-#print(arr)    
+print(arr)    
 insertion_sort(arr)
 print(arr)
 end = timer()
