@@ -6,8 +6,6 @@ def insertion_sort(arr):
             j -= 1
 
 
-
-
 arr = [5,2,3,1,4,8,9]
 insertion_sort(arr)
 print(arr)
