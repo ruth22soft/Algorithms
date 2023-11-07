@@ -68,13 +68,13 @@ def mergeSort(arr, l, r):
 
 # Driver code to test above
 arr = []
-for a in range(1,10):
-    n = random.randint(1,10)
+for a in range(1,100):
+    n = random.randint(1,100)
     arr.append(n)
 #this is to generate the array in increasing order(best case)
 arr = sorted(arr)
 #this is to generate an array in decreasing order(worst case)
-arr.sort(reverse=True)
+#array.sort(reverse=True)
 #print(arr)    
 #print(array)
 n = len(arr)

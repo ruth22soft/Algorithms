@@ -74,7 +74,7 @@ for a in range(1,10):
 #this is to generate the array in increasing order(best case)
 arr = sorted(arr)
 #this is to generate an array in decreasing order(worst case)
-arr.sort(reverse=True)
+#array.sort(reverse=True)
 #print(arr)    
 #print(array)
 n = len(arr)

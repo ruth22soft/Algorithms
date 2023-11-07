@@ -68,8 +68,8 @@ def mergeSort(arr, l, r):
 
 # Driver code to test above
 arr = []
-for a in range(1,10):
-    n = random.randint(1,10)
+for a in range(1,5000):
+    n = random.randint(1,5000)
     arr.append(n)
 #this is to generate the array in increasing order(best case)
 arr = sorted(arr)

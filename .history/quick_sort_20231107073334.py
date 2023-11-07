@@ -3,9 +3,8 @@
 # Merges two subarrays of arr[].
 # First subarray is arr[l..m]
 # Second subarray is arr[m+1..r]
-from timeit import default_timer as timer
-import random 
-start = timer()
+
+
 def merge(arr, l, m, r):
 	n1 = m - l + 1
 	n2 = r - m
@@ -68,25 +67,23 @@ def mergeSort(arr, l, r):
 
 # Driver code to test above
 arr = []
-for a in range(1,10):
-    n = random.randint(1,10)
+for a in range(1,5000):
+    n = random.randint(1,5000)
     arr.append(n)
 #this is to generate the array in increasing order(best case)
-arr = sorted(arr)
+#array = sorted(arr)
 #this is to generate an array in decreasing order(worst case)
-arr.sort(reverse=True)
+#array.sort(reverse=True)
 #print(arr)    
 #print(array)
-n = len(arr)
-
-
-mergeSort(arr, 0, n-1)
+#n = len(arr)
+print("Given array is")
 for i in range(n):
 	print("%d" % arr[i],end=" ")
 
-end = timer()
+mergeSort(arr, 0, n-1)
+print("\n\nSorted array is")
+for i in range(n):
+	print("%d" % arr[i],end=" ")
 
-
-print(end-start)
-
-
+# This code is contributed by Mohit Kumra
