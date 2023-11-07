@@ -9,17 +9,16 @@ def insertion_sort(arr):
         while arr[j-1] > arr[j] and j>0:
             arr[j-1], arr[j] = arr[j], arr[j-1]
             j -= 1
-#this is to generate random numbers(average case)
+#this is to generate random numbers
 arr = []
-for a in range(1,5000):
-    n = random.randint(1,5000)
+for a in range(1,5):
+    n = random.randint(1,5)
     arr.append(n)
 #this is to generate the array in increasing order(best case)
-array = sorted(arr)
-#this is to generate an array in decreasing order(worst case)
-array.sort(reverse=True)
-#print(arr)    
-print(array)
+#array = sorted(arr)
+#this is to generate an array in decreasing order
+array = reversed(arr)
+print(arr)    
 insertion_sort(array)
 print(array)
 end = timer()

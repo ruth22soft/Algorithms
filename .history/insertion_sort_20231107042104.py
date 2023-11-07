@@ -11,8 +11,8 @@ def insertion_sort(arr):
             j -= 1
 #this is to generate random numbers(average case)
 arr = []
-for a in range(1,5000):
-    n = random.randint(1,5000)
+for a in range(1,5):
+    n = random.randint(1,5)
     arr.append(n)
 #this is to generate the array in increasing order(best case)
 array = sorted(arr)
