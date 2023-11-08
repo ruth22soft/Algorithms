@@ -34,8 +34,8 @@ def quickSort(array, low, high):
 
 
 arr = []
-for a in range(1,2000):
-    n = random.randint(1,2000)
+for a in range(1,1000):
+    n = random.randint(1,1000)
     arr.append(n)
 #this is to generate the array in increasing order(best case)
 arr = sorted(arr)

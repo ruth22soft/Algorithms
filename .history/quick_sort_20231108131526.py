@@ -34,15 +34,15 @@ def quickSort(array, low, high):
 
 
 arr = []
-for a in range(1,2000):
-    n = random.randint(1,2000)
+for a in range(1,10):
+    n = random.randint(1,10)
     arr.append(n)
 #this is to generate the array in increasing order(best case)
 arr = sorted(arr)
 
 #this is to generate an array in decreasing order(worst case)
 arr.sort(reverse=True)
-#print(arr)
+print(arr)
 size = len(arr)
 
 quickSort(arr, 0, size - 1)
