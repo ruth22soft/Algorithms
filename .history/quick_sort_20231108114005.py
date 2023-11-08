@@ -39,7 +39,7 @@ for a in range(1,5000):
     arr.append(n)
 #this is to generate the array in increasing order(best case)
 arr = sorted(arr)
-
+print(arr)
 #this is to generate an array in decreasing order(worst case)
 #arr.sort(reverse=True)
 
